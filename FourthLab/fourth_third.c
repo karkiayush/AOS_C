@@ -57,7 +57,7 @@ int main(){
 	pthread_t producer_thread, consumer_thread;
 	
 	//create producer and consumer thread
-	pthread_create(&producer_thead, NULL, producer, NULL);
+	pthread_create(&producer_thread, NULL, producer, NULL);
 	pthread_create(&consumer_thread, NULL, consumer, NULL);
 	
 	//Join Threads
@@ -68,12 +68,3 @@ int main(){
 	return 0;
 }
 
-
-		printf("Consumed item %d from index %d\n",item,out);
-		out=(out+1)%BUFFER_SIZE;
-
-		//Update empty and full slot counts
-		empty_slots++;
-		full_slots--;
-
-		sleep(2);
