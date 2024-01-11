@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <unistd.h>
-#include <bits/pthreadtypes.h>
+#include <pthreadtypes.h>
 #define BUFFER_SIZE 5
 int buffer[BUFFER_SIZE];
 int in = 0;
