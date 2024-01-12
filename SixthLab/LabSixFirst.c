@@ -1,3 +1,7 @@
+/*
+Here we are implementing the SRTF algo which is the premptive version of SJF.
+*/
+
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -65,7 +69,6 @@ void srtf(struct Process process[], int n)
         {
             process[shortest].completed == true;
         }
-        
 
         // sort process based on remaining time for the next iteration
         sort_by_remaining_time(process, n);
